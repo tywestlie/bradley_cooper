@@ -1,0 +1,96 @@
+body {
+  display: grid;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: repeat(3, 33.33%);
+  justify-content: start;
+}
+
+section {
+  display: flex;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row: 1 / 2;
+  background-color: #60b980;
+  align-items: center;
+  justify-content: left;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+p {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+article {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  padding-left: 20px;
+}
+
+.picture {
+  display: flex;
+  grid-row: 1 / 4;
+  grid-column: 4 / 6;
+  background-image: url('http://images.gawker.com/18k2yjb73aapipng/c_fit,fl_progressive,q_80,w_470.png');
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+  background-color: #f2a23a;
+}
+
+.experience {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  background-color: #418abf;
+}
+
+.education {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  background-color: #e06451;
+}
+
+.blog {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  background-color: #60b980;
+}
+
+.social-menu {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  background-color: #f2a23a;
+}
+
+.contact {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  background-color: #418abf;
+}
+
+.portfolio {
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+  background-color: #f2a23a;
+}
